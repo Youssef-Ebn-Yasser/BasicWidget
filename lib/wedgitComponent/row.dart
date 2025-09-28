@@ -1,18 +1,22 @@
 import 'package:flutter/material.dart';
 
-class ColumnWidget extends StatelessWidget {
-  const ColumnWidget({super.key});
+class RowWidget extends StatelessWidget {
+  const RowWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Column(
+        body: Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text("data"),
-            Image.asset("lib/assets/images/istockphoto-479310160-612x612.jpg"),
+            Image.asset(
+              "lib/assets/images/istockphoto-479310160-612x612.jpg",
+              width: 200,
+              height: 200,
+            ),
             Text("data"),
             Text("data"),
           ],
