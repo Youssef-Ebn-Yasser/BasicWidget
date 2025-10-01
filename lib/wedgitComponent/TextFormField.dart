@@ -15,7 +15,18 @@ class _TextformfieldWidgetState extends State<TextformfieldWidget> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: const Text("Text Form Fields ")),
+        appBar: AppBar(
+          leading: const Text("leading"),
+          elevation: 20,
+          shadowColor: Colors.red,
+          titleTextStyle: const TextStyle(color: Colors.white),
+          actions: [
+            IconButton(onPressed: () {}, icon: const Icon(Icons.list)),
+          ],
+          title: const Text("Text Form Fields "),
+          centerTitle: true,
+          backgroundColor: Colors.greenAccent,
+        ),
         body: Form(
           autovalidateMode: AutovalidateMode.always,
           key: formstate,
